@@ -340,7 +340,6 @@ public class BTree {
             }
             if (n.numEntries == PersistentStatics.MAX_ENTRIES)
                 splitChild(currNode, n, i);
-//            if (n.entries[i] != null && word.compareTo(n.entries[i].word) > 0) i++;
             insertNonfull(n, word);
         }
     }
